@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise de Ilhas de Calor Urbanas</title>
+  <style>
+    :root {
+      --primary: #d9381e;
+      --secondary: #2c3e50;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--secondary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--primary);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: var(--secondary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--secondary);
+      color: white;
+    }
+
+    .solutions-list {
+      padding-left: 1.2rem;
+    }
+
+    .solutions-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--secondary);
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Análise de Ilhas de Calor Urbanas</h1>
+    <p>Estudo do impacto do urbanismo na temperatura das cidades</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>O que são Ilhas de Calor?</h2>
+      <p>Ilhas de calor urbanas ocorrem quando áreas urbanas apresentam temperaturas significativamente mais altas do que as zonas rurais ao redor. Isso acontece devido à substituição da vegetação por asfalto, concreto e edifícios, além da emissão de calor por veículos e indústrias.</p>
+    </section>
+
+    <section class="card">
+      <h2>Comparativo de Superfícies Urbanas</h2>
+      <p>Diferentes materiais urbanos absorvem e retêm calor de maneiras distintas:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de Superfície</th>
+            <th>Absorção de Calor</th>
+            <th>Impacto na Temperatura Local</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asfalto escuro</td>
+            <td>Muito Alta</td>
+            <td>Aumento elevado (especialmente à noite)</td>
+          </tr>
+          <tr>
+            <td>Concreto/Edifícios</td>
+            <td>Alta</td>
+            <td>Bloqueia ventos e retém calor</td>
+          </tr>
+          <tr>
+            <td>Parques e Arborização</td>
+            <td>Baixa</td>
+            <td>Redução de temperatura (Evapotranspiração)</td>
+          </tr>
+          <tr>
+            <td>Corpos d'água (Lagos/Rios)</td>
+            <td>Moderada</td>
+            <td>Efeito regulador e umidificante</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Estratégias de Mitigação</h2>
+      <p>Principais medidas para reduzir a intensidade das ilhas de calor nas cidades:</p>
+      <ul class="solutions-list">
+        <li><strong>Aumento do verde urbano:</strong> Plantio de árvores em calçadas e ampliação de parques urbanos.</li>
+        <li><strong>Telhados Verdes:</strong> Instalação de vegetação no topo de edifícios para isolamento térmico.</li>
+        <li><strong>Pavimento permeável e claro:</strong> Uso de materiais refletivos para evitar a retenção de calor nas vias.</li>
+        <li><strong>Preservação de corredores de vento:</strong> Planejamento urbano que permite a circulação natural do ar.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Projeto de Monitoramento Ambiental Urbano</p>
+  </footer>
+
+</body>
+</html>
