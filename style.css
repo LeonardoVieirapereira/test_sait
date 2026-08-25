@@ -1,0 +1,229 @@
+/* Variables Globais */
+:root {
+  --primary-red: #ff4757;
+  --cool-blue: #2ed573;
+  --dark-bg: #1e1e24;
+  --card-bg: #ffffff;
+  --text-main: #2f3542;
+  --secondary-bg: #f1f2f6;
+  --border-color: #e4e7eb;
+}
+
+/* Reset Geral */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--secondary-bg);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header e Banner Principal */
+header {
+  background: linear-gradient(135deg, #2c3e50, #000000);
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 1rem 5rem 1rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInDown 1s ease-out;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #dfe4ea;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease-out 0.3s backwards;
+}
+
+/* Container de Destaque da Ilustração SVG */
+.hero-image-container {
+  max-width: 1000px;
+  margin: -3rem auto 2rem auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 10;
+  animation: zoomIn 1s ease-out 0.5s backwards;
+}
+
+.svg-wrapper {
+  background: linear-gradient(135deg, #1e272e, #3d3d3d);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  border: 4px solid #ffffff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.svg-wrapper svg {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+/* Estrutura Principal */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #1e272e;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background: var(--primary-red);
+  bottom: -6px;
+  left: 0;
+  border-radius: 2px;
+}
+
+/* Grid de Estatísticas */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-left: 5px solid var(--primary-red);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-red);
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #57606f;
+  margin-top: 0.3rem;
+}
+
+/* Botoes e Gráfico Interativo */
+.chart-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-toggle {
+  background-color: var(--border-color);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #57606f;
+}
+
+.btn-toggle.active {
+  background-color: var(--primary-red);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+}
+
+.chart-container {
+  position: relative;
+  height: 380px;
+  width: 100%;
+}
+
+/* Tabela de Dados */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--secondary-bg);
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1e272e;
+  color: #a4b0be;
+}
+
+/* Keyframes para Animações */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
